@@ -1,6 +1,6 @@
 package com.injection.injection_de_dependances;
 
-public class UserService {
+public class UserService implements IUserService{
     private UserDAO userDAO ;
     public String getFullName(){
         String[] userInfo = userDAO.getUsers();
